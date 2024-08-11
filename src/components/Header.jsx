@@ -63,7 +63,7 @@ function Header() {
 
         >
             <nav
-                className="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center border-none"
+                className="flex px-3 text-sm font-medium rounded-full text-gray-600 backdrop-blur-sm dark:text-gray-200 justify-center items-center border-none"
                 id="header-nav"
             >
                 {

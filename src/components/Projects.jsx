@@ -1,42 +1,106 @@
 import React from 'react';
 import { BsGithub } from 'react-icons/bs';
+import { BiLink, BiLogoReact } from 'react-icons/bi';
 import { RiNextjsFill } from 'react-icons/ri';
-import { BiLogoTailwindCss } from 'react-icons/bi';
-import { BiLink } from 'react-icons/bi';
+import { DiNodejs } from 'react-icons/di';
+import { SiExpress } from 'react-icons/si';
+import { SiMysql } from 'react-icons/si';
+import { SiPrime } from 'react-icons/si';
+import { DiJava } from 'react-icons/di';
+import { BiServer } from 'react-icons/bi';
+import { SiSequelize } from 'react-icons/si';
 import LinkButton from './LinkButton';
 
 // Define the TAGS object
 const TAGS = {
-  NEXT: {
+  REACT: {
+    name: 'React',
+    class: 'bg-[#61DAFB] text-black',
+    icon: BiLogoReact,
+  },
+  NEXTJS: {
     name: 'Next.js',
     class: 'bg-black text-white',
     icon: RiNextjsFill,
   },
-  TAILWIND: {
-    name: 'Tailwind CSS',
-    class: 'bg-[#003159] text-white',
-    icon: BiLogoTailwindCss,
+  NODE: {
+    name: 'Node.js',
+    class: 'bg-[#339933] text-white',
+    icon: DiNodejs,
+  },
+  EXPRESS: {
+    name: 'Express',
+    class: 'bg-[#000000] text-white',
+    icon: SiExpress,
+  },
+  SEQUELIZE: {
+    name: 'Sequelize',
+    class: 'bg-[#52B0E7] text-white',
+    icon: SiSequelize,
+  },
+  MYSQL: {
+    name: 'MySQL',
+    class: 'bg-[#4479A1] text-white',
+    icon: SiMysql,
+  },
+  PRIMEFACES: {
+    name: 'PrimeFaces',
+    class: 'bg-[#35A4CF] text-white',
+    icon: SiPrime,
+  },
+  JSPA: {
+    name: 'JSPA',
+    class: 'bg-[#F7DF1E] text-black',
+    icon: DiJava,
+  },
+  WILDFLY: {
+    name: 'WildFly',
+    class: 'bg-[#3366CC] text-white',
+    icon: BiServer,
   },
 };
 
 // Define the PROJECTS array
 const PROJECTS = [
   {
-    title: 'SVGL - A beautiful library with SVG logos',
+    title: 'ExpertGuide y Landing Page',
     description:
-      'Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.',
-    link: 'https://svgl.vercel.app/',
-    github: 'https://github.com/pheralb/svgl',
-    image: '/projects/svgl.webp',
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      'Sistema full-stack para la gestión de guías requeridas por SENAE en Ecuador. Incluye una landing page moderna que refleja las últimas tendencias en UI. Optimiza la eficiencia operativa en la exportación de productos.',
+    link: 'https://expertshandlingcargo.com',
+    image: '/projects/template.webp',
+    tags: [TAGS.REACT, TAGS.NEXTJS, TAGS.NODE, TAGS.EXPRESS, TAGS.SEQUELIZE, TAGS.MYSQL],
+    date: 'Enero 2022 - Actualidad',
+    client: 'Experts Handling Cargo',
   },
   {
-    title: 'AdventJS - Retos de programación con JavaScript y TypeScript',
+    title: 'Sistema Integral de Gestión Hospitalaria',
     description:
-      'Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.',
-    link: 'https://adventjs.dev',
-    image: '/projects/adventjs.webp',
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      'Sistema completo para la gestión hospitalaria, incluyendo módulos para generación de formularios, manejo de pacientes, gestión de citas, horarios y servicios. Mejora significativamente la eficiencia operativa del hospital.',
+    link: 'https://hospitalmetropolitano.org',
+    image: '/projects/template.webp',
+    tags: [TAGS.PRIMEFACES, TAGS.JSPA, TAGS.MYSQL, TAGS.WILDFLY],
+    date: 'Marzo 2024',
+    client: 'Hospital Metropolitano',
+  },
+  {
+    title: 'Interfaz de Usuario para DAO Ethereum',
+    description:
+      'Interfaz de usuario avanzada para una organización autónoma descentralizada (DAO) operando en la blockchain de Ethereum en Ecuador. Mejora la participación y optimiza los procesos de gobernanza.',
+    link: 'https://ethereumecuador.org',
+    image: '/projects/template.webp',
+    tags: [TAGS.REACT, TAGS.NODE],
+    date: 'Octubre 2023 - Noviembre 2023',
+    client: 'Ethereum Ecuador',
+  },
+  {
+    title: 'Sistema Automatizado de Reserva de Almuerzos',
+    description:
+      'Sistema innovador de reserva de almuerzos utilizando códigos QR. Optimiza significativamente el proceso de reserva, mejorando la eficiencia y la experiencia del usuario.',
+    link: 'https://krugercorp.com',
+    image: '/projects/template.webp',
+    tags: [TAGS.REACT, TAGS.NODE],
+    date: 'Mayo 2023 - Junio 2023',
+    client: 'Kruger Corp',
   },
 ];
 
